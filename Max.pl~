@@ -1,2 +1,6 @@
-max(X,Y,X):-X>=y.
+max(X,Y,X):-X>=Y.
 max(X,Y,Y):-X<Y.
+occurence([],_,0).
+occurence([X|L],Y):-X>Y,occurence(L,X).
+occurence([X|L],Y):-Y>=X,occurence(L,Y).
+
