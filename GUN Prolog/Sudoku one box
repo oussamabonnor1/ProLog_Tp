@@ -1,0 +1,10 @@
+fd_domain([A,B,C,D,E,F,G,H,I],1,9),
+fd_all_different([A,B,C,D,E,F,G,H,I]),
+A+B+C#=D+E+F,
+A+B+C#=G+H+I,
+A+B+C#=A+D+G,
+A+B+C#=B+E+H,
+A+B+C#=C+F+I,
+A+B+C#=C+E+G,
+A+B+C#=A+E+I,
+fd_labeling([A,B,C,D,E,F,G,H,I]).
